@@ -1,58 +1,78 @@
 <html>
 <title> Campo minado</title>
-<body bgcolor="#808080" text="#2F4F4F">
+<body bgcolor="#F8F8FF" text="#2F4F4F">	
 <style type="text/css"> 
-div.a { text-align: center;
-
+	div.a { text-align: center;
+	}
+	td {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	}
+	.fechado {
+		background-color: #A9A9A9;
+	}
+	.negrito {
+ font-weight: bold;
 }
+	.negritosafe {
+ font-weight: bold;
+ color: #006400;
+}
+
+a:hover { background: #F5DEB3; font-weight: bold;}
+
 </style>
 
 <div class="a">	
-<h1> you're in easy mode! </h1> </div>
-	<table border="0">
+<h1> You're in easy mode! </h1> 
+</div>
+	<table border="0" align="center">
         <tr>
-        <th><a href="campominadoeasy.html" style="color: #2F4F4F">Easy</a></th>
-        <th><a href="campominadohard.html" style="color: #2F4F4F">Hard</a></th>
-        <th><a href="campominadosobre.html"style="color: #2F4F4F">About</a></th>
+        <td><a href="campominadoeasy.html" style="color: #2F4F4F">Easy</a></td>
+        <td><a href="campominadohard.html" style="color: #2F4F4F">Hard</a></td>
+        <td><a href="campominadosobre.html"style="color: #2F4F4F">About</a></td>
     </tr>
 </table>
+<div class="a">
 <p> click on some frame to get started</p>
-    <table border="3" style="background-color:#FDF5E6">
+</div>
+    <table border="3" style="background-color:#FDF5E6" align="center">
 
         <tr>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
+        <td class="fechado"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
         </tr>
         <tr>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
+        <td></td>
+        <td><img src="bomba.JFIF" width="50px" height="50px"> </td>
+        <td class="negrito">3</td>
+        <td></td>
+        <td></td>
         </tr>
         <tr>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
+        <td class="negrito">2</td>
+        <td class="negrito">1</td>
+        <td class="negrito">1</td>
+        <td class="negrito">1</td>
+        <td></td>
         </tr>
         <tr>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
+        <td></td>
+        <td class="fechado"></td>
+        <td class="negritosafe">Safe</td>
+        <td class="negrito">1</td>
+        <td class="fechado"></td>
         </tr>
         <tr>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
-        <th>____</th>
+        <td>1</td>
+        <td class="fechado"></td>
+        <td class="fechado"></td>
+        <td class="negritosafe">Safe</td>
+        <td class="fechado"></td>
         </tr>
 
 </table>
