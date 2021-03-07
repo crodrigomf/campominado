@@ -11,9 +11,9 @@ var campo = [
 
 var gabarito = [
 [0,1,1,1,0],
-[0,1,8,2,1],
-[0,2,2,3,8],
-[0,1,8,1,1],
+[0,1,9,2,1],
+[0,2,2,3,9],
+[0,1,9,1,1],
 [0,1,1,1,0]
 ];
 
@@ -61,16 +61,26 @@ app.get('/', function(req, res){
 </div>
 	<table border="0" align="center">
         <tr>
-        <td><a href="campominadoeasy.html" style="color: #2F4F4F">Easy</a></td>
-        <td><a href="campominadohard.html" style="color: #2F4F4F">Hard</a></td>
-        <td><a href="campominadosobre.html"style="color: #2F4F4F">About</a></td>
+        <th><a href="campominadoeasy.html" style="color: #2F4F4F">Easy</a></th>
+        <th><a href="campominadohard.html" style="color: #2F4F4F">Hard</a></th>
+        <th><a href="campominadosobre.html"style="color: #2F4F4F">About</a></th>
     </tr>
 	<table>`;
 	for (i = 0; i < 5; i++) {
 		html += "<tr>";
-	for (J = 0; J < 5; J++){
-		var gabarito = gabarito[i][j];
-		html += `<td>${gabarito}</td>`;
+	for (j = 0; j < 5; j++){
+		var numero = gabarito[i][j];
+		/*if([i][j]!= 0){
+			console.log ({numero[i][j]})
+		}
+		if([i][j] = 9){
+			alert("Game Over")
+		html += `<td>${numero}</td>`;
+		} else {
+			console.log ({numero[i][j]})
+		}*/
+		html += `<td>${numero}</td>`;
+		
 	}	
 		html += "</tr>"; 
 	}
